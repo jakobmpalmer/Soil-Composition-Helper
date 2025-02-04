@@ -1,5 +1,6 @@
 import React, { Dispatch, SetStateAction } from 'react';
-import { potSizes, PotSize } from '../../utils/gardenPotUtils';
+import { potSizes } from '../../utils/gardenPotUtils';
+import { PotSize } from '../../types/potsize';
 
 interface PotSizeModalProps {
   onSelectSize: Dispatch<SetStateAction<PotSize | null>>;
@@ -16,7 +17,7 @@ const PotSizeModal: React.FC<PotSizeModalProps> = ({ onSelectSize }) => {
   };
 
   return (
-    <div>
+    <div style={{ textAlign: 'center' }}>
       <h2>Select Pot Size</h2>
       {Object.keys(potSizes).map((size) => (
         <button

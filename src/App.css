@@ -1,5 +1,4 @@
 body, html {
-  height: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -7,27 +6,59 @@ body, html {
 }
 
 .container {
-  /* text-align: center; */
   width: 100%;
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.sliders {
+/* .sliders {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+} */
 
-.garden-pot {
+/* .garden-pot {
   width: 200px;
   height: 300px;
   border: 2px solid black;
   margin: 20px auto;
   display: flex;
   flex-direction: column-reverse;
-}
-.garden-pot div {
+} */
+/* .garden-pot div {
   width: 100%;
   transition: height 0.3s;
+} */
+
+
+.mainContent {
+  display: flex;
+  min-height: 42vh;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+
+
+.flex-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.tab-section, .garden-pot-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grid-header {
+  font-weight: bold;
 }

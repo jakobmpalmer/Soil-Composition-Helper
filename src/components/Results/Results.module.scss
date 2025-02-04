@@ -1,0 +1,11 @@
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .grid-header {
+    font-weight: bold;
+  }

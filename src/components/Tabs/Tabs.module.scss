@@ -1,0 +1,32 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  button {
+    background-color: #009113;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #ddd;
+    }
+
+    &.active {
+      background-color: #00e279;
+      color: rgb(0, 0, 0);
+    }
+  }
+}
+
+.tab-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #464646;
+  min-height: 42vh;
+}
