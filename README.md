@@ -1,12 +1,11 @@
 # Soil Composition Helper
 
 # React + TypeScript + Vite
-
-Overview
+### Overview
 
 The Soil Composition Designer is an interactive web application that allows users to visually design soil mixtures by adjusting the percentages of soil, perlite, vermiculite, and peat moss. It also integrates OpenAI's API to suggest optimal soil compositions for different plants based on user queries.
 
-Features
+### Features
 
 Intuitive Sliders & Bars: Adjust soil component percentages dynamically.
 
@@ -18,27 +17,27 @@ Customizable Mixtures: Save and edit custom soil compositions.
 
 Modern UI: Built with Vite for fast performance and smooth interactions.
 
-Tech Stack
+### Tech Stack
 
 Frontend: Vite, React
 
-Styling: Tailwind CSS
+Styling: SASS
 
-Backend API (if applicable): Node.js, Express
+Backend API: Node.js, Express
 
 AI Integration: OpenAI API
 
-State Management: React Hooks or Zustand (if used)
+State Management: React Hooks
 
-Installation
+## Installation
 
-Prerequisites
+### Prerequisites
 
 Node.js (latest LTS recommended)
 
 npm or yarn
 
-Steps to Run Locally
+### Steps to Run Locally
 
 # Clone the repository
 git clone https://github.com/yourusername/soil-composition-designer.git
@@ -48,9 +47,9 @@ cd soil-composition-designer
 npm install   # or yarn install
 
 # Start the development server
-npm run dev   # or yarn dev
+npm run dev
 
-Usage
+# Usage
 
 Adjust the sliders to set the soil composition percentages.
 
@@ -85,3 +84,4 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 License
 
 This project is licensed under the MIT License.
+
