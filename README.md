@@ -1,6 +1,9 @@
+<p align="center">
+  <img src="https://github.com/jakobmpalmer/soil-composition-helper/blob/main/public/res/logo/logo_with-transparent.medium.png" alt="Logo"/>
+</p>
+
 # Soil Composition Helper
 
-# React + TypeScript + Vite
 ### Overview
 
 The Soil Composition Designer is an interactive web application that allows users to visually design soil mixtures by adjusting the percentages of soil, perlite, vermiculite, and peat moss. It also integrates OpenAI's API to suggest optimal soil compositions for different plants based on user queries.
@@ -19,7 +22,7 @@ Modern UI: Built with Vite for fast performance and smooth interactions.
 
 ### Tech Stack
 
-Frontend: Vite, React
+Frontend: Vite, React, Typescript
 
 Styling: SASS
 
