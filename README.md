@@ -42,18 +42,18 @@ npm or yarn
 
 ### Steps to Run Locally
 
-# Clone the repository
-git clone https://github.com/jakobmpalmer/soil-composition-helper.git
+## Clone the repository
+git clone https://github.com/jakobmpalmer/Soil-Composition-Helper.git
 
 cd soil-composition-designer
 
 # Install dependencies
-npm install
+`npm install`
 
 # Start the development server
-npm run dev
+`npm run dev`
 
-# Usage
+## Usage
 
 Adjust the sliders to set the soil composition percentages.
 
@@ -61,7 +61,7 @@ Click the "Get AI Recommendation" button to receive optimal soil composition for
 
 Save or modify custom compositions for future reference.
 
-API Integration
+### API Integration
 
 To use the OpenAI API:
 
@@ -73,7 +73,7 @@ VITE_OPENAI_API_KEY=your_api_key_here
 
 Restart the app to apply the changes.
 
-Roadmap
+## Roadmap
 
 Add database support to store user-created soil compositions.
 
