@@ -40,11 +40,12 @@ npm or yarn
 ### Steps to Run Locally
 
 # Clone the repository
-git clone https://github.com/yourusername/soil-composition-designer.git
+git clone https://github.com/jakobmpalmer/soil-composition-helper.git
+
 cd soil-composition-designer
 
 # Install dependencies
-npm install   # or yarn install
+npm install
 
 # Start the development server
 npm run dev
