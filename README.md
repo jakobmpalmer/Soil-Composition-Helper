@@ -2,51 +2,86 @@
 
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
 
-Currently, two official plugins are available:
+The Soil Composition Designer is an interactive web application that allows users to visually design soil mixtures by adjusting the percentages of soil, perlite, vermiculite, and peat moss. It also integrates OpenAI's API to suggest optimal soil compositions for different plants based on user queries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
 
-## Expanding the ESLint configuration
+Intuitive Sliders & Bars: Adjust soil component percentages dynamically.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Graphical Representation: A visual garden pot updates in real-time to reflect the composition.
 
-- Configure the top-level `parserOptions` property like this:
+AI Recommendations: Use OpenAI to fetch the best soil composition for specific plants.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Customizable Mixtures: Save and edit custom soil compositions.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Modern UI: Built with Vite for fast performance and smooth interactions.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Tech Stack
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Frontend: Vite, React
+
+Styling: Tailwind CSS
+
+Backend API (if applicable): Node.js, Express
+
+AI Integration: OpenAI API
+
+State Management: React Hooks or Zustand (if used)
+
+Installation
+
+Prerequisites
+
+Node.js (latest LTS recommended)
+
+npm or yarn
+
+Steps to Run Locally
+
+# Clone the repository
+git clone https://github.com/yourusername/soil-composition-designer.git
+cd soil-composition-designer
+
+# Install dependencies
+npm install   # or yarn install
+
+# Start the development server
+npm run dev   # or yarn dev
+
+Usage
+
+Adjust the sliders to set the soil composition percentages.
+
+Click the "Get AI Recommendation" button to receive optimal soil composition for a selected plant.
+
+Save or modify custom compositions for future reference.
+
+API Integration
+
+To use the OpenAI API:
+
+Obtain an API key from OpenAI.
+
+Create a .env file in the root directory and add:
+
+VITE_OPENAI_API_KEY=your_api_key_here
+
+Restart the app to apply the changes.
+
+Roadmap
+
+Add database support to store user-created soil compositions.
+
+Enhance AI recommendations with more soil properties.
+
+Implement community sharing features.
+
+Contributions
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+License
+
+This project is licensed under the MIT License.
