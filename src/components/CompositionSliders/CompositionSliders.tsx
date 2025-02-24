@@ -17,7 +17,7 @@ const CompositionSliders: React.FC<CompositionSlidersProps> = ({ soilMix, handle
     soil: '/res/dirt-svgrepo-com.svg', // Path to your soil image
     perlite: '/res/perlite-transparent.png', // Path to your perlite image
     vermiculite: '/res/vermiculite-transparent.png', // Path to your vermiculite image
-    peatMoss: '/res/peatmoss-transparent.png', // Path to your peatmoss image
+    peatMoss: '/res/peat-moss-transparent.png', // Path to your peatmoss image
 });
   
   const getSliderClass = (key: keyof SoilMix) => {
@@ -40,8 +40,11 @@ const CompositionSliders: React.FC<CompositionSlidersProps> = ({ soilMix, handle
     Object.keys(soilMix).forEach((key) => {
       const typedKey = key as keyof SoilMix;
       const slider = document.querySelector(`.${styles[key + 'Slider']}`) as HTMLElement; // Select slider by class and cast to HTMLElement
+      // if (slider) {
+      //   (slider.style as CustomCSSProperties)['--thumb-image'] = `url(${thumbImages[typedKey]})`;
+      // }
       if (slider) {
-        (slider.style as CustomCSSProperties)['--thumb-image'] = `url(${thumbImages[typedKey]})`;
+        slider.style.setProperty('--thumb-image', `url(${thumbImages[typedKey]})`);
       }
     });
   }, [soilMix, thumbImages]); // Re-run effect when soilMix or thumbImages change
