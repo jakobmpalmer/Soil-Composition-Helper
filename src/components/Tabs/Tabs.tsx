@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import styles from './Tabs.module.scss';
+import TabButtons from './TabButtons';      
 
 interface TabsProps {
   children: React.ReactNode;
+  activeTab: number;
 }
 
-const Tabs: React.FC<TabsProps> = ({ children }) => {
-  const [activeTab, setActiveTab] = useState(0);
+const Tabs: React.FC<TabsProps> = ({ children, activeTab }) => {
+  // const [activeTab, setActiveTab] = useState(0);
 
   const renderContent = () => {
     return React.Children.toArray(children)[activeTab];
@@ -14,26 +16,7 @@ const Tabs: React.FC<TabsProps> = ({ children }) => {
 
   return (
     <div>
-      <div className={styles.tabs}>
-        <button
-          className={activeTab === 0 ? styles.active : ''}
-          onClick={() => setActiveTab(0)}
-        >
-          Sliders
-        </button>
-        <button
-          className={activeTab === 1 ? styles.active : ''}
-          onClick={() => setActiveTab(1)}
-        >
-          Search
-        </button>
-        <button
-          className={activeTab === 2 ? styles.active : ''}
-          onClick={() => setActiveTab(2)}
-        >
-          Saved
-        </button>
-      </div>
+      {/* <TabButtons activeTab={activeTab} onTabChange={setActiveTab} /> */}
       <div className={styles['tab-content']}>{renderContent()}</div>
     </div>
   );

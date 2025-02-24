@@ -16,8 +16,8 @@ const GardenPot: React.FC<GardenPotProps> = ({ potSize, soilMix = { soil: 25, pe
 
   return (
     <div className={styles.container}>
-      <h2 style={{textAlign: 'center'}}>Set Your Soil Mix</h2>  
-      <div style={{backgroundColor: 'grey', borderRadius: '10px'}}>
+      {/* <h2 style={{textAlign: 'center'}}>Set Your Soil Mix</h2>   */}
+      <div>
         <SelectedPotSize potSize={potSize} />   
         <div className={styles.gardenPot}>
           {/* <Tooltip label={`Soil (${soilMix.soil}%)`}> */}
