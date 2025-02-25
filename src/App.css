@@ -93,3 +93,15 @@ body, html {
 .grid-header {
   font-weight: bold;
 }
+
+.themeIcon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  line-height: 1em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: currentColor;
+  vertical-align: middle;
+}
